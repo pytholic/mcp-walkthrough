@@ -311,7 +311,7 @@ Add the server URL `http://127.0.0.1:9000/mcp` and connect to the server.
 - Update start command to `uv run mcp_research_server.py`
 - Click `Deploy`
 
-Update `server_config.json` to use remote server.
+Update `server_config.json` to use remote server (replace `command`,`args` with `url`).
 ```json
 {
   "mcpServers": {
@@ -335,3 +335,5 @@ Run the chatbot with the deployed remote server.
 ```
 uv run mcp_chatbot_resource_prompt_tool.py
 ```
+
+Follow prompt steps from the [example](#chatbot-with-multiple-mcp-servers) in previous section. 

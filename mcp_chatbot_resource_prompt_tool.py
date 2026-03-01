@@ -14,7 +14,7 @@ from pathlib import Path
 import nest_asyncio
 from dotenv import load_dotenv
 from fastmcp import Client
-from fastmcp.client.transports import StdioTransport, StreamableHTTPTransport
+from fastmcp.client.transports import StdioTransport, StreamableHttpTransport
 from openai import OpenAI
 from openai.types.responses import FunctionToolParam, ResponseInputParam
 from typing import TypedDict, Any
@@ -50,7 +50,7 @@ class MCPChatbot:
     async def connect_to_server(self, server_name: str, server_config: dict[str, Any]):
         try:
             if "url" in server_config:
-                transport = StreamableHTTPTransport(server_config["url"])
+                transport = StreamableHttpTransport(url=server_config["url"])
                 print(f"Connected to {server_name} with URL: {server_config['url']}")
             else:
                 transport = StdioTransport(
