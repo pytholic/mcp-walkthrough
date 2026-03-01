@@ -302,3 +302,36 @@ npx @modelcontextprotocol/inspector
 ```
 
 Add the server URL `http://127.0.0.1:9000/mcp` and connect to the server.
+
+### Deploy on Render.com and test remote server
+
+- Push the codebase to git repo. 
+- Make an account on Render. 
+- Connect github repo and deploy a new web service
+- Update start command to `uv run mcp_research_server.py`
+- Click `Deploy`
+
+Update `server_config.json` to use remote server.
+```json
+{
+  "mcpServers": {
+    "filesystem": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-filesystem", "."]
+    },
+    "research": {
+      "url": "<REMOTE URL>/mcp"
+    },
+    "fetch": {
+      "command": "uvx",
+      "args": ["mcp-server-fetch"]
+    }
+  }
+}
+
+```
+
+Run the chatbot with the deployed remote server.
+```
+uv run mcp_chatbot_resource_prompt_tool.py
+```
