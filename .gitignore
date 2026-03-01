@@ -1,0 +1,5 @@
+papers/
+.env
+.venv/
+server_config.json
+.DS_Store
