@@ -222,5 +222,8 @@ if __name__ == "__main__":
     # Default: STDIO transport
     # mcp.run(transport="stdio")
 
-    # Or use HTTP transport
-    mcp.run(transport="http", host="127.0.0.1", port=9000)
+    # Local HTTP transport
+    # mcp.run(transport="http", host="127.0.0.1", port=9000)
+    
+    # Remote HTTP transport
+    mcp.run(transport="http")

@@ -275,6 +275,10 @@ NOTE: I want you to use available research_server to search papers and extract i
 
 Till now we worked with servers running locally using `stdio` transport. Now, we will create a remote server using FastMCP `Streamable HTTP` transport, test it using MCP inspector and then learn how to deploy it on `render.com`.
 
+
+### Run and test on local machine
+Make sure all the required deps are installed (`uv sync`).
+
 We update the main block in our `mcp_research_server.py`:
 
 ```python
@@ -286,8 +290,10 @@ if __name__ == "__main__":
     mcp.run(transport="http", host="127.0.0.1", port=9000)
 ```
 
-### Run and test on local machine
-Make sure all the required deps are installed (`uv sync`).
+Run the server:
+```
+uv run mcp_research_server.py
+```
 
 Run in terminal:
 
