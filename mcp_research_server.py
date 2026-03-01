@@ -225,5 +225,7 @@ if __name__ == "__main__":
     # Local HTTP transport
     # mcp.run(transport="http", host="127.0.0.1", port=9000)
     
-    # Remote HTTP transport
-    mcp.run(transport="http")
+    # Remote HTTP transport for deployment on render.com
+    # Default port is 10000
+    # Ref: https://render.com/docs/web-services#port-binding
+    mcp.run(transport="http", host="0.0.0.0", port=10000)
