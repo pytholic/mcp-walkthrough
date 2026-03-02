@@ -2,6 +2,10 @@
 
 A step-by-step walkthrough of the Model Context Protocol (MCP) using [FastMCP](https://gofastmcp.com/) and OpenAI.
 
+> **What is MCP?** The Model Context Protocol (MCP) is an open standard that enables AI models to securely connect to local and remote data sources, tools, and systems. Think of it as a "USB-C plug for AI".
+> 
+> 📖 **For a detailed overview of MCP, its architecture, and benefits, please read [MCP.md](MCP.md).**
+
 ## Setup
 
 ```bash
