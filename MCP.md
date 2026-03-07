@@ -24,8 +24,8 @@ MCP standardizes how your LLM applications connect and work with your tools and 
 - **Proven Concepts:** Borrows a lot of ideas from other established protocols.
 - **Reusability:** MCP servers are highly reusable by various applications.
 
-![Rest vs. LSP vs. MCP](images/rest_lsp_mcp.png)
-![Reusability](images/reusable_mcppng.png)
+<img src="images/rest_lsp_mcp.png" alt="Rest vs. LSP vs. MCP" width="800"/>
+<img src="images/reusable_mcp.png" alt="Reusability" width="800"/>
 
 ---
 
@@ -37,7 +37,7 @@ MCP is similar to other client-server architectures.
 - **MCP Clients:** These live inside the host application. MCP clients maintain a one-to-one (1:1) connection with MCP servers.
 - **MCP Servers:** Lightweight programs that each expose specific capabilities via the MCP protocol.
 
-![MCP Architecture](images/architecture.png)
+<img src="images/architecture.png" alt="MCP Architecture" width="800"/>
 
 ---
 
@@ -58,7 +58,7 @@ The MCP server exposes three main primitives to the client:
 - The **MCP Client** invokes tools, queries for resources, and interpolates prompts.
 - The **MCP Server** exposes these tools, resources, and prompt templates.
 
-![Tools, resources, and prompts](images/tools_resources_prompts.png)
+<img src="images/tools_resources_prompts.png" alt="Tools, resources, and prompts" width="800"/>
 
 ---
 
@@ -76,7 +76,7 @@ The lifecycle of an MCP connection consists of three main phases:
 3. **Termination:**
    - The connection is cleanly terminated.
 
-![Communication Lifecycle](images/communication_lifecycle.png)
+<img src="images/communication_lifecycle.png" alt="Communication Lifecycle" height="1000"/>
 
 ---
 
